@@ -26,12 +26,12 @@
             ],
             "styles": [
               "src/styles.css",
-              "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": [
               "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/jquery/dist/jquery.js",
+              "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/bootstrap/dist/js/bootstrap.js",
               "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/tether/dist/js/tether.js",
-              "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/bootstrap/dist/js/bootstrap.min.js",
               "/Users/alexa/OneDrive/Área de Trabalho/Confidencial/Confidencial/node_modules/materialize-css/dist/js/materialize.js"
             ]
           },
