@@ -1,19 +1,21 @@
-<br><br><br>
+
+<h5>LOGIN</h5>
+<BR>
 <form>
-    <div class="mb-1 fix ">
-      <label for="exampleInputEmail1" class="form-label" >E-mail cadastrado</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="email@example.com" aria-describedby="emailHelp">
+    <div class="mb-1 fix col-md-3">
+      <label  for="InputEmail" class="form-label" >E-mail cadastrado</label>
+      <input ngModel =  "{usuario.nome}" type="email" class="form-control" id="InputEmail" placeholder="email@example.com" aria-describedby="emailHelp">
       <!--div id="emailHelp" class="form-text">E-mail cadastrado</div-->
     </div>
-    <div class="mb-3">
+    <div class="mb-3 flex col-md-3">
       <label for="exampleInputPassword1" class="form-label">Senha</label>
-      <input type="password" class="form-control" id="exampleInputPassword1">
+      <input ngModel =  "{usuario.senha}" type="password" class="form-control" id="exampleInputPassword1">
     </div>
     <div class="mb-3 form-check">
       <input type="checkbox" class="form-check-input" id="exampleCheck1">
       <label class="form-check-label" for="exampleCheck1">Manter-se conectado</label>
     </div>
-    <button type="submit" class="btn btn-primary">ENTRAR</button>
-    <button routerLink = "/cadastro" type="submit" class="btn btn-secondary margin-left">CADASTRAR-SE</button>
+    <button type="submit"  name="action"class="btn btn-primary" (click)="fazerLogin()" >LOGIN <i class="bi bi-arrow-right-square"></i></button>
+    <button routerLink = "/cadastro" type="submit" class="btn btn-secondary margin-left">CADASTRAR-SE <i class="bi bi-card-checklist"></i></button>
   </form>
   
