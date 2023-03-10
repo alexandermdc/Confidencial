@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AuthService } from './login/auth.service';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Confidencial';
+
+  // eslint-disable-next-line @typescript-eslint/no-inferrable-types
+  mostrarMenu: boolean = false;
+
+  constructor(private authService: AuthService) {}
+
+  ngOninit(){
+    this.authService.mostrarMenuService.subscribe( mostrar => this.mostrarMenu = mostrar);
+  }
 }

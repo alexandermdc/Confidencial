@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-inferrable-types */
 import { Router } from '@angular/router';
 import { Usuario } from './usuario';
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root',
@@ -8,15 +9,26 @@ import { Injectable } from '@angular/core';
 
 export class AuthService {
   
-  private usuarioAutenticado = false;
+  private usuarioAutenticado: boolean = false;
+  
+  mostrarMenuService = new EventEmitter<boolean>();
   
   constructor(private router: Router) {}
 
   fazerLogin(usuario: Usuario){
-    if(usuario.nome === 'usuario@email.com' && usuario.senha === '123456'){
+
+    if(usuario.nome === 'usuario@email.com' && 
+    usuario.senha === '123456'){
+
       this.usuarioAutenticado = true;
+
+      this.mostrarMenuService.emit(true);
+
       this.router.navigate(['/']);
-    }else
+      
+    }else{
       this.usuarioAutenticado = false;
+      this.mostrarMenuService.emit(false);
     }
   }
+}
