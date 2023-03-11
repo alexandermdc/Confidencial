@@ -1,3 +1,4 @@
+import { AuthGuard } from './guards/auth.guard';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
 /* eslint-disable @typescript-eslint/no-unused-vars */
@@ -9,7 +10,7 @@ import {NgModule} from '@angular/core';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const APP_ROUTES: Routes = [ 
     {path: 'login', component: LoginComponent},
-    {path: 'home', component: HomeComponent},
+    {path: '', component: HomeComponent, canActivate:[AuthGuard]},
     {path: 'cadastro', component: CadastroComponent}
 ];
 

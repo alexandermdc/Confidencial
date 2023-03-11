@@ -31,4 +31,9 @@ export class AuthService {
       this.mostrarMenuService.emit(false);
     }
   }
+  usuarioEstaAutenticado(){
+    return this.usuarioAutenticado;
+  }
+
 }
+

@@ -27,12 +27,12 @@
               "styles": [
                 "src/styles.css",
                 "../confidencial/node_modules/bootstrap/dist/css/bootstrap.css"
+               
               ],
               "scripts": [
                 "../confidencial/node_modules/jquery/dist/jquery.js",
                 "../confidencial/node_modules/bootstrap/dist/js/bootstrap.js",
-                "../confidencial/node_modules/tether/dist/js/tether.js",
-                "../confidencial/node_modules/materialize-css/dist/js/materialize.js"
+                "../confidencial/node_modules/tether/dist/js/tether.js" 
               ]
             },
             "configurations": {
