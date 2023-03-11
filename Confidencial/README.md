@@ -1,4 +1,4 @@
-# Confidencial
+# Teste de desenvolvedor / confidencial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
@@ -6,22 +6,21 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+1 - intall angular version 15.2.1
+2 - install -->> node versao 18.4.2
+3 - install bootstrap -->> npm i bootstrap@5.3.0-alpha1
+4 - instaal icons bootstrap -->> npm i bootstrap-icons
+5 - install jquery version 3.6.3 --> https://blog.jquery.com/2022/12/20/jquery-3-6-3-released-a-quick-selector-fix/
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+depois disso da um "ng serve"
 
-## Build
+e entre no navegaçao padrao do angular `http://localhost:4200/`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+vai ser redirecionado automaticamente para a pagina de login
 
-## Running unit tests
+usuario mokado 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+usuario: `usuario@email.com`
+senha: `123456`
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+depois disso vc vai poder navegar pela aplicaçao
