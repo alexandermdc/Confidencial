@@ -1,3 +1,6 @@
+import { CadastroImoveisComponent } from './cadastro-imoveis/cadastro-imoveis.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { EditarCadastroComponent } from './editar-cadastro/editar-cadastro.component';
 import { AuthGuard } from './guards/auth.guard';
 //import { routing } from './app.routing';
 import { NgModule } from '@angular/core';
@@ -20,7 +23,10 @@ import { FormsModule } from '@angular/forms';
     DiretivaNgifComponent,
     LoginComponent,
     HomeComponent,
-    CadastroComponent
+    CadastroComponent,
+    EditarCadastroComponent,
+    DashboardComponent,
+    CadastroImoveisComponent
   ],
   imports: [
     BrowserModule,
